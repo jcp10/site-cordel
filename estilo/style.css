@@ -19,14 +19,17 @@ html,body{
 }
 
 header{
+    background-image: linear-gradient(to bottom, rgb(49, 47, 47),black);
     background-color: black;
     color: white;
     text-align: center;
+    padding: 10px;
 }
 header>h1{
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--font2);
+    font-size: 3em;
 }
 header>p{
     padding-bottom: 50px;
@@ -36,6 +39,7 @@ header a, footer a{
     color: white;
     text-decoration: none;
     font-weight: bolder;
+    
 }
 header a:hover, footer a:hover{
     text-decoration: underline;
@@ -46,7 +50,13 @@ section{
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--font3);
+    font-size: 1.6em;
 }
+
+section >p{
+    padding-bottom: 2em;
+}
+
 section.normal{
     background-color: white;
     color: black;
@@ -54,10 +64,22 @@ section.normal{
 section.img{
     background-color: rgb(51, 51, 51);
     color: white;
+    background-size: cover;
+    background-attachment: fixed;
 }
 section.img >p{
     width: 400px;
     background-color: rgba(0, 0, 0, 0.313);
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+section#img02{
+background-image: url('../imagens/background002.jpg');
+
 }
 
 footer{
